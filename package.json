@@ -1,0 +1,13 @@
+{
+  "name": "collab-tool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Single-service deployment wrapper: builds the React frontend and installs backend deps, then runs the Express server which serves both the API and the built UI.",
+  "scripts": {
+    "build": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
+    "start": "node backend/server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
